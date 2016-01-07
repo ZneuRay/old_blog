@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[寫起來才記得]]></title>
+  <title><![CDATA[用嘴寫code]]></title>
   <link href="http://zneuray.github.io/atom.xml" rel="self"/>
   <link href="http://zneuray.github.io/"/>
-  <updated>2016-01-07T00:53:58+08:00</updated>
+  <updated>2016-01-07T15:48:07+08:00</updated>
   <id>http://zneuray.github.io/</id>
   <author>
     <name><![CDATA[Ray]]></name>
@@ -12,5 +12,82 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress + Github 架設自已的Blog 111]]></title>
+    <link href="http://zneuray.github.io/blog/2016/01/07/octopress-plus-github-jia-she-zi-yi-de-blog/"/>
+    <updated>2016-01-07T01:03:05+08:00</updated>
+    <id>http://zneuray.github.io/blog/2016/01/07/octopress-plus-github-jia-she-zi-yi-de-blog</id>
+    <content type="html"><![CDATA[<h1>test</h1>
+
+<h2>test2</h2>
+
+<h1>1</h1>
+
+<h2>2</h2>
+
+<h3>3</h3>
+
+<h4>4</h4>
+
+<blockquote><p>this<br/>
+dsfadsf</p>
+
+<blockquote><p>234</p></blockquote></blockquote>
+
+<ul>
+<li><p>123</p></li>
+<li><p>333</p></li>
+<li><p>444</p></li>
+<li><p>asdg</p>
+
+<ol>
+<li>sdf
+
+<ol>
+<li>sdf
+
+<ol>
+<li>fewf
+
+<ol>
+<li>fw3eer</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>ffsd</li>
+</ol>
+</li>
+<li><p>dfas</p></li>
+<li><p>fdfpsd</p></li>
+<li><p>sdfsd</p>
+
+<blockquote><p>ewrwe
+fdsf</p></blockquote>
+
+<ol>
+<li>df</li>
+</ol>
+
+
+<p> 123123</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='swift'><span class='line'><span class="k">var</span> <span class="nl">s</span><span class="p">:</span> <span class="n">String</span> <span class="o">=</span> <span class="s">&quot;asdf&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<hr />
+
+<hr />
+
+<p><a href="http://www.google.com.tw" title="test">google</a> asd</p>
+]]></content>
+  </entry>
   
 </feed>
