@@ -1,8 +1,16 @@
 ---
 layout: page
 title: "about"
-date: 2014-01-25 10:25
-comments: true
-sharing: true
+date: 2016-01-07 18:25
+comments: false
+sharing: false
 footer: true
 ---
+
+Ray
+
+Android app / Ruby / Rails web developer
+
+Mail: [ray9015@gmail.com][email]
+
+[email]: mailto:ray9015@gmail.com

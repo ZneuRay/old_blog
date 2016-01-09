@@ -7,7 +7,7 @@ title: 用嘴寫code
 subtitle: 說的一口好程式
 author: Ray
 simple_search: https://www.google.com/search
-description:
+description: Android app / Ruby / Rails web developer
 logo: 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -20,7 +20,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: ray9015@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -34,8 +34,8 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: kramdown
-mathjax: true
+markdown: rdiscount
+# mathjax: true
 rdiscount:
   extensions:
     - autolink
