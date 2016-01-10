@@ -24,19 +24,19 @@ categories: [Blog, Github, Octopress]
 
 最後我選擇了使用**Octopress**，下面來簡單介紹一下每個Blog
 
-#### Blogger
+### Blogger
 
 這是Google自已的Blog，有Google帳號就可以登入使用，但介面與操作我不太喜歡，而且沒有能放code的區塊，要自已進html加上css與javascript才會有syntax highlighting的功能，非常不方便，所以沒有使用。
 
-#### WordPress
+### WordPress
 
 一個open source的blog，功能非常強大，只要找一台Server就可架設，現在又有很多租用的Server都直接支援架設WordPress，WordPress自已本身也提供線上免費版，其實非常夠用了，原本打算就直接使用WordPress，但是發現免費版的目前並不支援Swift syntax highlighting(支援的語言請[參考][WordPress_Syntax_highlighting])，也無法安裝外掛，所以先擺著看看還有沒有其他的Blog。
 
-#### Ghost
+### Ghost
 
 同樣是open source的blog，架構使用node.js，目的就是為了簡潔快速，畫面還滿漂亮，並且使用**Markdown**來編輯，當時有心動打算使用，但想到要找台nodejs的Server較麻煩，目前也不打算自已架Server，所以也先擺著。
 
-> ##### Markdown簡介
+> #### Markdown簡介
 
 >[Markdown][]是一種易讀易寫的格式，用一些簡單的符號就可以進行整篇文章的排版，像現在看到的這篇文章就是使用Markdown格式寫成的，Markdown原本就支援code block，再加上Github以Markdown設計出[GitHub Flavored Markdown][GFM]，支援了大部份語言的syntax highlighting，當初希望在記錄Swift學習心得時能有個漂亮的顏色顯示，所以選擇了有支援Markdown的Blog。
 
@@ -50,13 +50,13 @@ func sayHello(to person: String) -> Void {
 sayHello(to: name) // "Hello Ray"
 ```
 
-#### Logdown
+### Logdown
 
 由XDite的團隊設計，目的就是要能方便貼code、貼圖等，專門設計給程式設計師的Blog，當時其實已經在安裝Octopress，過程中不小心看到的，試用了一下覺得還算不錯，同樣使用Markdown編輯，畫面清析簡單，也提供免費版，對程式設計師又不想自已架設Blog的人非常推薦使用。
 
 
 
-#### Octopress
+### Octopress
 
 這就今天的主角，一個畫面功能簡潔，也同樣是以Markdown來編輯的Blog，並且搭配Github pages就可以架設，整個Blog也可自行修改客製，因此最後選擇了Octopress。
 
@@ -72,7 +72,7 @@ sayHello(to: name) // "Hello Ray"
 2. Ruby與Javascript環境
 3. 安裝Octopress
 
-#### Github
+### Github
 
 先去[Github][]辦個帳號，接著建立Github pages([官網][Github pages])，但不要照著官網做，我們只需要新增一個repository並取名為 :
 
@@ -80,7 +80,7 @@ sayHello(to: name) // "Hello Ray"
 
 **username** 是你的帳號，全小寫就好，千萬不要跟著打username上去，像我的帳號是zneuray，就打`zneuray.github.io`，這也是你網站的位置，建好後你就擁有一個基本的網站了。
 
-#### Ruby
+### Ruby
 
 `OS X 10.11`內建就有`Ruby-2.0.0`，目前Octopress僅需要`1.9.3`以上的版本即可，可以直接略過這步
 
@@ -107,7 +107,7 @@ $ rvm get stable --autolibs=enable
 $ rvm install ruby-2.3.0
 ```
 
-#### Octopress
+### Octopress
 
 接下來就開始安裝Octopress，在console使用git將整個repository下載回來，最後面octopress為下載的資料夾，可自行更換
 
@@ -204,7 +204,7 @@ octopress
 Blog設定
 ===
 
-首先我們需要來設定Blog的資訊，主要的設定都在`_config.yml`，檔案中還有其他設定再依自已需求調整即可，這裡列出最基本的Blog資訊
+首先我們需要來設定Blog的資訊，主要的設定都在`_config.yml`，這是`yaml`格式的檔案，基本格式就是`設定名稱: 設定值`，非常容易就可以修改，檔案中還有其他設定再依自已需求調整即可，這裡列出最基本的Blog資訊
 
 ```yaml
 url: "http://zneuray.github.io"
@@ -262,12 +262,12 @@ published: true
 <!-- more -->
 ```
 
-在這行語法後的文章就不會出現在主頁面，而會顯示一個`更多`的按鈕讓你點入觀看文章，這樣就可以整理好主頁的版面
+在這行語法後的文章就不會出現在主頁面，而會顯示一個`更多`的按鈕讓你點入觀看文章，這樣就可以整理好主頁的版面，這串語法是在`_config.yml`中設定的，如果發現語法沒效果請檢查你的`_config.yml`是否有做修改
 
-#### 本篇文章編輯的範例
+### 本篇文章編輯的範例
 {% img /images/blog/48cd89ea8b201ee0e5fd/5f88861b8fc71281dec0d33b481d2bd4b43c988f.png %}
 
-#### 預覽
+### 預覽
 寫文章時我們當然想看一下目前編輯出來的文章到底長什麼樣子，`Octopress`也提供了預覽的指令
 
 ```sh
@@ -282,7 +282,7 @@ $ rake preview
 
 輸入指令後就我們就可以看到`Octopress`自動執行`rake generate`後幫我們啟動了一個`web server`並開啟`port 4000`讓我們可以連線進入，接下來打開你的瀏覽器並輸入網址[127.0.0.1:4000][localhost]，就可以預覽你目前的Blog，這個方式會佔用一個terminal，在預覽完後按`ctrl + c`關閉才可以繼續使用該terminal。
 
-#### pow
+### pow
 
 另外推薦一個簡單的web server套件[pow][]，在寫RoR時因為常常要預覽網頁，但每次都要啟動關閉server實在很麻煩，因此安裝`pow`，`pow`會根據目前專案的設定來啟動一個server，除非有更改到設定的部份才需要重啟，不然就從此放著不管他就可以了。
 
@@ -323,7 +323,7 @@ $ powder unlink #解除專案連結
 $ powder open #自動使用瀏覽器開啟專案的網址
 ```
 
-#### Octopress theme
+### Octopress theme
 
 Octopress theme的安裝非常簡單，在Octopress的[Wiki][octopress wiki]上已經收集了不少的theme，選擇你想要安裝的theme進入他的github，把theme使用git clone到你`.theme`的目錄再安裝就好了，每個theme也都有教你安裝方式，除了有些theme有另外增加新功能需要你去設定外，大致上都差不多
 
@@ -338,7 +338,7 @@ $ rake generate
 
 這樣我們就完成theme的安裝並產生新的Blog了，這邊可以下rake install["oct2"]是因為我們把oct2的source放到`.theme`底下了，看一下`.theme`的資料夾發現裡面還有一個classic，這個就是原始octopress的theme，所以想換回來的話只要`rake install["classic"]`就可以了
 
-#### 增加留言功能
+### 增加留言功能
 
 想要增加留言功能的話我們直接使用`Octopress`支援的[Disqus][]就好了，`Disqus`是一套整合的留言版管理系統，幫你整合各大社群登入與留言，安裝也非常快速簡單。
 
