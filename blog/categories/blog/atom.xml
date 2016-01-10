@@ -37,6 +37,18 @@
 
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-63488741-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
   <style>html{background: url(/images/background.png) no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}</style>
 </head>
@@ -54,7 +66,7 @@
   <title><![CDATA[Category: blog | 用嘴寫code]]></title>
   <link href="http://zneuray.github.io/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://zneuray.github.io/"/>
-  <updated>2016-01-10T13:38:46+08:00</updated>
+  <updated>2016-01-10T13:50:45+08:00</updated>
   <id>http://zneuray.github.io/</id>
   <author>
     <name><![CDATA[Ray]]></name>
@@ -367,7 +379,7 @@ $ powder open #自動使用瀏覽器開啟專案的網址
 
 <h4>Octopress theme</h4>
 
-<p>Octopress theme的安裝非常簡單，在Octopress的<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Wiki</a>上已經收集了不少的theme，選擇你想要安裝的theme進入他的github，把theme使用git clone到你的<code>.theme</code>的目錄再安裝就好了，每個theme也都有教你安裝方式，除了有些theme有另外增加新功能需要你去設定外，大致上都差不多</p>
+<p>Octopress theme的安裝非常簡單，在Octopress的<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Wiki</a>上已經收集了不少的theme，選擇你想要安裝的theme進入他的github，把theme使用git clone到你<code>.theme</code>的目錄再安裝就好了，每個theme也都有教你安裝方式，除了有些theme有另外增加新功能需要你去設定外，大致上都差不多</p>
 
 <p>以本站來說，選擇的是<a href="https://github.com/bijumon/oct2">Oct2</a>這個theme，下面範例就使用這個theme來做安裝，選擇其他theme的記得要換掉網址，不要造著輸入</p>
 
@@ -399,19 +411,18 @@ $ rake generate
 
 
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
 
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
 
 
 

@@ -4,7 +4,7 @@
   <title><![CDATA[用嘴寫code]]></title>
   <link href="http://zneuray.github.io/atom.xml" rel="self"/>
   <link href="http://zneuray.github.io/"/>
-  <updated>2016-01-10T13:38:46+08:00</updated>
+  <updated>2016-01-10T13:50:45+08:00</updated>
   <id>http://zneuray.github.io/</id>
   <author>
     <name><![CDATA[Ray]]></name>
@@ -413,7 +413,7 @@ Repository url:</p></blockquote>
 
 <h4>Octopress theme</h4>
 
-<p>Octopress theme的安裝非常簡單，在Octopress的<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Wiki</a>上已經收集了不少的theme，選擇你想要安裝的theme進入他的github，把theme使用git clone到你的<code>.theme</code>的目錄再安裝就好了，每個theme也都有教你安裝方式，除了有些theme有另外增加新功能需要你去設定外，大致上都差不多</p>
+<p>Octopress theme的安裝非常簡單，在Octopress的<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">Wiki</a>上已經收集了不少的theme，選擇你想要安裝的theme進入他的github，把theme使用git clone到你<code>.theme</code>的目錄再安裝就好了，每個theme也都有教你安裝方式，除了有些theme有另外增加新功能需要你去設定外，大致上都差不多</p>
 
 <p>以本站來說，選擇的是<a href="https://github.com/bijumon/oct2">Oct2</a>這個theme，下面範例就使用這個theme來做安裝，選擇其他theme的記得要換掉網址，不要造著輸入</p>
 
