@@ -502,6 +502,41 @@ Repository url:</p></blockquote>
 
 <p>這樣我們就完成theme的安裝並產生新的Blog了，這邊可以下rake install[&ldquo;oct2&rdquo;]是因為我們把oct2的source放到<code>.theme</code>底下了，看一下<code>.theme</code>的資料夾發現裡面還有一個classic，這個就是原始octopress的theme，所以想換回來的話只要<code>rake install["classic"]</code>就可以了</p>
 
+<h4>增加留言功能</h4>
+
+<p>想要增加留言功能的話我們直接使用<code>Octopress</code>支援的<a href="https://disqus.com">Disqus</a>就好了，<code>Disqus</code>是一套整合的留言版管理系統，幫你整合各大社群登入與留言，安裝也非常快速簡單。</p>
+
+<p>要在<code>Octopress</code>上使用<code>Disqus</code>，需要先到<code>Disqus</code>官網註冊一組帳號才行</p>
+
+<ol>
+<li>首先開啟文章支援留言的功能，在文章的最上方將<code>comments</code>設定為<code>true</code>，代表本篇文章開啟留言，不想開留言的文章設定為<code>false</code>即可</li>
+<li>進入<a href="https://disqus.com">Disqus</a>註冊一個帳號</li>
+<li>回到首頁看到右上角有個齒輪點擊選擇<code>Add Disqus To Site</code></li>
+<li>按下Start Using Engage</li>
+<li>輸入你的Blog網址並取一個唯一的名稱設定<code>Disqus</code>網址，你設定的這組唯一的名稱叫做<code>shortname</code>(不包含<code>.disqus.com</code>)，未來這組<code>shortname.disqus.com</code>就是你留言版的網址</li>
+<li>回到Blog開啟<code>_config.yml</code>找到下面這一行填入你的shortname</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">disqus_short_name</span><span class="p-Indicator">:</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>重新產生Blog並發佈</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>rake generate
+</span><span class='line'><span class="nv">$ </span>rake deploy
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>這樣你的Blog就新增了留言的功能</p>
+
 <h1>恭喜</h1>
 
 <p>順利安裝完<code>Octopress</code>後就代表你已經擁有一個自已的Blog了，現在我也是剛裝好<code>Octopress</code>開始使用，還有非常多的功能目前我也還沒使用到，未來在寫新文章的過程有用到新的功能時再更新上來吧。</p>
