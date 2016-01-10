@@ -9,6 +9,8 @@ author: Ray
 simple_search: https://www.google.com/search
 description: Android app / Ruby / Rails web developer
 logo: 
+keywords: Swift, iOS developer, Ruby, Ruby On Rails, programming, coding, Octopress, 用嘴寫code
+description: 一個記錄Swift學習過程的網站
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -28,7 +30,7 @@ email: ray9015@gmail.com
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 source: source
 destination: public
 plugins: plugins

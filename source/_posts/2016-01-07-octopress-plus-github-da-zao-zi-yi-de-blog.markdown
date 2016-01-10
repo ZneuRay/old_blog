@@ -5,6 +5,8 @@ date: 2016-01-07 18:28:26 +0800
 date_formatted: 18:28 Jan 7, 2016
 comments: true
 categories: [Blog, Github, Octopress]
+keywords: Swift, iOS developer, Octopress, Github, Blog, 部落格, Disqus, 程式設計師, WordPress, Ghost, Blogger, 用嘴寫code
+description: 在github pages架設octopress, OS X安裝ruby, octopress設定, markdown blog, 在octopress發表新文章, 預覽octopress文章, octopress theme安裝, octopress增加disqus留言
 ---
 
 部落格誕生

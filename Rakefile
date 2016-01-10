@@ -116,6 +116,8 @@ task :new_post, :title do |t, args|
     post.puts "date_formatted: #{Time.now.strftime('%R %b %-d, %Y')}"
     post.puts "comments: true"
     post.puts "categories: "
+    post.puts "keywords: Swift, iOS developer, Ruby, Ruby On Rails, programming, coding, Octopress, 用嘴寫code"
+    post.puts "description: 一個記錄Swift學習過程的網站"
     post.puts "---"
   end
 end
