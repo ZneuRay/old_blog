@@ -66,7 +66,7 @@
   <title><![CDATA[Category: github | 用嘴寫code]]></title>
   <link href="http://zneuray.github.io/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://zneuray.github.io/"/>
-  <updated>2016-01-10T17:04:07+08:00</updated>
+  <updated>2016-01-10T17:58:36+08:00</updated>
   <id>http://zneuray.github.io/</id>
   <author>
     <name><![CDATA[Ray]]></name>
@@ -266,7 +266,7 @@ $ git push origin source
 
 <h1>Blog設定</h1>
 
-<p>首先我們需要來設定Blog的資訊，主要的設定都在<code>_config.yml</code>，檔案中還有其他設定再依自已需求調整即可，這裡列出最基本的Blog資訊</p>
+<p>首先我們需要來設定Blog的資訊，主要的設定都在<code>_config.yml</code>，這是<code>yaml</code>格式的檔案，基本格式就是<code>設定名稱: 設定值</code>，非常容易就可以修改，檔案中還有其他設定再依自已需求調整即可，這裡列出最基本的Blog資訊</p>
 
 <pre><code class="yaml">url: "http://zneuray.github.io"
 title: "用嘴寫code"
@@ -322,7 +322,7 @@ published: true
 
 
 <pre><code>
-在這行語法後的文章就不會出現在主頁面，而會顯示一個`更多`的按鈕讓你點入觀看文章，這樣就可以整理好主頁的版面
+在這行語法後的文章就不會出現在主頁面，而會顯示一個`更多`的按鈕讓你點入觀看文章，這樣就可以整理好主頁的版面，這串語法是在`_config.yml`中設定的，如果發現語法沒效果請檢查你的`_config.yml`是否有做修改
 
 ### 本篇文章編輯的範例
 <img src="/images/blog/48cd89ea8b201ee0e5fd/5f88861b8fc71281dec0d33b481d2bd4b43c988f.png">

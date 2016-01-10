@@ -4,7 +4,7 @@
   <title><![CDATA[用嘴寫code]]></title>
   <link href="http://zneuray.github.io/atom.xml" rel="self"/>
   <link href="http://zneuray.github.io/"/>
-  <updated>2016-01-10T17:04:07+08:00</updated>
+  <updated>2016-01-10T17:58:36+08:00</updated>
   <id>http://zneuray.github.io/</id>
   <author>
     <name><![CDATA[Ray]]></name>
@@ -261,7 +261,7 @@ Repository url:</p></blockquote>
 
 <h1>Blog設定</h1>
 
-<p>首先我們需要來設定Blog的資訊，主要的設定都在<code>_config.yml</code>，檔案中還有其他設定再依自已需求調整即可，這裡列出最基本的Blog資訊</p>
+<p>首先我們需要來設定Blog的資訊，主要的設定都在<code>_config.yml</code>，這是<code>yaml</code>格式的檔案，基本格式就是<code>設定名稱: 設定值</code>，非常容易就可以修改，檔案中還有其他設定再依自已需求調整即可，這裡列出最基本的Blog資訊</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -338,7 +338,7 @@ Repository url:</p></blockquote>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>在這行語法後的文章就不會出現在主頁面，而會顯示一個<code>更多</code>的按鈕讓你點入觀看文章，這樣就可以整理好主頁的版面</p>
+<p>在這行語法後的文章就不會出現在主頁面，而會顯示一個<code>更多</code>的按鈕讓你點入觀看文章，這樣就可以整理好主頁的版面，這串語法是在<code>_config.yml</code>中設定的，如果發現語法沒效果請檢查你的<code>_config.yml</code>是否有做修改</p>
 
 <h3>本篇文章編輯的範例</h3>
 
