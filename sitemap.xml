@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://zneuray.github.io/archives/</loc>
+    <loc>http://zneuray.github.io/blog/2016/01/07/octopress-plus-github-da-zao-zi-yi-de-blog/</loc>
+    <lastmod>2016-01-07T18:28:26+08:00</lastmod>
   </url>
   <url>
     <loc>http://zneuray.github.io/blog/</loc>
+  </url>
+  <url>
+    <loc>http://zneuray.github.io/archives/</loc>
   </url>
   <url>
     <loc>http://zneuray.github.io/</loc>
@@ -14,5 +18,14 @@
   </url>
   <url>
     <loc>http://zneuray.github.io/about/</loc>
+  </url>
+  <url>
+    <loc>http://zneuray.github.io/blog/categories/blog/</loc>
+  </url>
+  <url>
+    <loc>http://zneuray.github.io/blog/categories/github/</loc>
+  </url>
+  <url>
+    <loc>http://zneuray.github.io/blog/categories/octopress/</loc>
   </url>
 </urlset>
