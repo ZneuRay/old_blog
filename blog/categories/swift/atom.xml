@@ -66,7 +66,7 @@
   <title><![CDATA[Category: swift | 用嘴寫code]]></title>
   <link href="http://zneuray.github.io/blog/categories/swift/atom.xml" rel="self"/>
   <link href="http://zneuray.github.io/"/>
-  <updated>2016-02-21T22:43:12+08:00</updated>
+  <updated>2016-02-21T22:46:37+08:00</updated>
   <id>http://zneuray.github.io/</id>
   <author>
     <name><![CDATA[Ray]]></name>
@@ -74,15 +74,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Swift學習-運算子]]></title>
-    <link href="http://zneuray.github.io/2016/02/21/swiftxue-xi-yun-suan-zi/"/>
-    <updated>2016-02-21T22:32:53+08:00</updated>
-    <id>http://zneuray.github.io/2016/02/21/swiftxue-xi-yun-suan-zi</id>
-    <content type="html"><![CDATA[<p>本篇範例參考 : <a href="https://github.com/ZneuRay/iOS-Tutorial/blob/master/Basic%20Operator.playground/Contents.swift">Basic operator</a></p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Swift學習 - 基礎篇]]></title>
