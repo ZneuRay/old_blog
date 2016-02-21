@@ -90,16 +90,18 @@
   </header>
 
 
-<div class="entry-content"><p>Swift是一個安全型別(type-safe)的語言，意思是說Swift會幫助你判別值的型別是什麼，例如說目前值所屬的型別是<code>String</code>，那麼Swift就會預防你不小心給予它<code>Int</code>的值，這可以幫助你在開發的過程中即時發現錯誤並修正。</p>
+<div class="entry-content"><p>本篇範例請參考<a href="https://github.com/ZneuRay/iOS-Tutorial/blob/master/Basic.playground/Contents.swift">Basic playground</a></p>
 
-<h3>常數(Constants)與變數(Variables)</h3>
+<p>Swift是一個安全型別(type-safe)的語言，意思是說Swift會幫助你判別值的型別是什麼，例如說目前值所屬的型別是<code>String</code>，那麼Swift就會預防你不小心給予它<code>Int</code>的值，這可以幫助你在開發的過程中即時發現錯誤並修正。</p>
+
+<h1>常數(Constants)與變數(Variables)</h1>
 
 <p>在程式中我們常常會需要記錄一些內容，例如一組字串(String)<strong><code>"Hello"</code></strong>或一個整數(Int)<strong><code>10</code></strong>，這些內容稱為值(value)，而我們會使用一組名稱來記錄這些值，稱為<code>常數</code>或<code>變數</code>，常數與變數的差別在於常數在第一次給予值後就無法再變更他的值了，而變數則可任意變更。</p>
 
 <!-- more -->
 
 
-<h3>宣告常數與變數</h3>
+<h1>宣告常數與變數</h1>
 
 <p>所有的常數與變數在使用前都必須先宣告，讓程式知道你將要使用這個變數，常數使用<code>let</code>，變數使用<code>var</code>來宣告，而宣告的常數或變數名稱盡量要好讀為主，避免忘了自已當時到底想描述什麼，以下示範一個追縱登入次數限制的範例 :</p>
 
@@ -126,7 +128,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>型別標注(Type Annotation)</h3>
+<h1>型別標注(Type Annotation)</h1>
 
 <p>儲存的值會有各種不同的型別存在，為了清楚的說明該常數或變數可儲存的值是什麼型別，我們可以加上型別標注，以下我們宣告一個儲存字串的變數，為給予一組字串</p>
 
@@ -161,7 +163,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>註解(Comments)</h3>
+<h1>註解(Comments)</h1>
 
 <p>註解是用在幫程式碼加上備註，讓程式碼更容易讀懂，也能幫助你未來再回來看程式碼時可透過註解馬上理解當初寫這些程式的用途是什麼，註解有兩種方式，分別是單行註解<code>//</code>與區塊註解<code>/* */</code></p>
 
@@ -186,7 +188,7 @@
 
 <p>Swift的註解支援巢狀(nested)註解，這在做些測試的時後非常好用，目前多數常見的語言都不支援，算是比較特別的地方</p>
 
-<h3>常數與變數命名方式</h3>
+<h1>常數與變數命名方式</h1>
 
 <p>常數與變數的命名方式主要是英文為主，大小寫皆可，雖然也支援unicode，但不太建議使用，因為這反而會讓你的程式碼更難維護</p>
 
@@ -233,7 +235,7 @@
 
 <p>class為類別的型別標注，在這裡使用class來命名雖然可行，但後面在撰寫程式時可能造成搞不清楚這是變數還是類別，容易造成混亂</p>
 
-<h3>印出常數與變數</h3>
+<h1>印出常數與變數</h1>
 
 <p>以上我們宣告了一堆常數與變數，接下來就要把裡面的值印出來看看，這裡使用print()就可以把值印在xcode的console上，print()的完整定義是<code>print(_:separator:terminator:)</code>，這表示print()這個涵式(function)可以傳入3個參數，在後面的章節會再詳細介紹，現在我們先來把值印出看看</p>
 
@@ -248,7 +250,7 @@
 
 <p>單純只要印出變數或常數的話直接放入print()中就可以，要印出字串也可直接將字串放入，如果要在字串中使用常數或變數則需要使用<code>\(常數或變數)</code>，Swift在字串中遇到這種格式就會自動以正確的值來替換</p>
 
-<h3>分號(Semicolons)</h3>
+<h1>分號(Semicolons)</h1>
 
 <p>在大部份程式語言中都會要求程式的每段陳述(statment)都要以<code>;</code>結尾，在Swift中則不需要，不過加上也不影響，但如果想要在一行中寫出超過一段的陳述就需要加上<code>;</code></p>
 
@@ -257,7 +259,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>整數(Integers)</h3>
+<h1>整數(Integers)</h1>
 
 <p>整數有有號(signed)與無號(unsigned)，有號整數包含正負數與0，無號整數只有正數與0，宣告有號整數使用<code>Int</code>，無號整數使用<code>UInt</code>，另外Swift也提供8、16、32和64 bits的整數型別，分別在<code>Int</code>後方加上對應的bit數即可，如<code>Int8</code>，無號的如<code>UInt16</code></p>
 
@@ -280,7 +282,7 @@
 
 <p>一般來說使用<code>Int</code>就足夠了，Swift會自動依目前裝置支援32或64-bit自動調整，32-bit的整數範圍為 -2,147,483,648 與 2,147,483,647，已經足夠應付大部份的程式</p>
 
-<h3>浮點數(Floating Point)</h3>
+<h1>浮點數(Floating Point)</h1>
 
 <p>浮點數指的是包含小數點的數，如<code>3.14159</code>，浮點數則提供了32與64 bits的型別，分別為<code>Float</code>與<code>Double</code>，精準度則為6位與15位的小數，在沒有特殊情況的考量下一般建議使用<code>Double</code>即可，Swift的型別推斷也是以<code>Double</code>為主，下面我們印出前面已宣告常數pi的型別，可知道Swift自動推斷型別為<code>Double</code></p>
 
@@ -289,7 +291,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>布林值(Booleans)</h3>
+<h1>布林值(Booleans)</h1>
 
 <p>布林值是一種用於邏輯判斷的值，僅能儲存<code>true</code>與<code>false</code>，要宣告一個布林值使用<code>Bool</code></p>
 
@@ -302,7 +304,7 @@
 
 <p>由於swift的型別安全機制，swift的布林值與大多數語言不同，<code>true</code>的值並非等於<code>1</code>，<code>false</code>也不等於<code>0</code>，這在使用條件判斷式如<code>if</code>時要特別注意，避免出錯</p>
 
-<h3>數值字面(Numeric Literals)</h3>
+<h1>數值字面(Numeric Literals)</h1>
 
 <p>整數中有2、8、10和16進位數值，一般我們常使用的是10進位，在Swift中可以使用前綴字的方式表示不同進位數值 :</p>
 
@@ -369,7 +371,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>字串(String)</h3>
+<h1>字串(String)</h1>
 
 <p>字串就是一串文字，必須需用雙引號<code>"</code>包起來</p>
 
@@ -378,11 +380,11 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>空值(nil)</h3>
+<h1>空值(nil)</h1>
 
 <p>在一般的程式語言中，<code>nil</code>(有些語言使用<code>null</code>)表示一個常數或變數為空的值，而讀取一個為nil的常數或變數就會造成程式錯誤(但可以用條件來判斷是否為nil)，因為不存在任何值，在Swift中因為有安全性的機制，並無法像一般語言直接將nil給予常數或變數，需要搭配Optional使用，這也幫助了開發者減少一些不可預期的錯誤</p>
 
-<h3>型別別名(Type Alias)</h3>
+<h1>型別別名(Type Alias)</h1>
 
 <p>使用關鍵字<code>typealias</code>可以幫型別取別名來代替</p>
 
@@ -393,7 +395,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>元組(Tuples)</h3>
+<h1>元組(Tuples)</h1>
 
 <p>Tuple可將多個值組合成群組形成一個值，如:<code>(123, "123", 1.23)</code>，在tuple中可放入任何型態的值，以下我們來練習建立一個iPhone的規格與價錢tuple</p>
 
@@ -438,7 +440,7 @@
 
 <p>Tuple可以快速的把多個值組成群組，這在暫時儲存幾個值的時後非常有用，但要用來儲存較複雜的資料結構就不是很適合，例如現在需要再新增一筆64g的iPhone6s就會非常難處理，判斷適合的情況來使用可以更有效的幫助你程式開發的效率。</p>
 
-<h3>可選擇項(Optionals)</h3>
+<h1>可選擇項(Optionals)</h1>
 
 <blockquote><p>Optional並沒有很明確的翻譯，如有更佳的翻譯請不吝提供，謝謝</p></blockquote>
 
@@ -486,7 +488,7 @@
 
 <p>由於possibleNumber在做轉換時可能產生nil，因此回傳的結果是optional，藉由型別推斷convertedNumber也是optional</p>
 
-<h3>可選擇項繫結(Optional binding)</h3>
+<h1>可選擇項繫結(Optional binding)</h1>
 
 <p>在條件判斷式中如<code>if</code>、<code>while</code>等，我們可能會想先判斷說這個值存不存在，如果存在再來進行其它動作，這時後使用optional binding可以讓我們更快速的達成效果，以上面的範例來看，如果我們用一般的方式判斷</p>
 
@@ -537,7 +539,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<h3>隱式解析可選擇項(Implicitly Unwrapped Optionals)</h3>
+<h1>隱式解析可選擇項(Implicitly Unwrapped Optionals)</h1>
 
 <p>有些時後我們可以很肯定的知道某些結果，例如我們可以很肯定"8"一定是數字，轉換時不可能會失敗，那我們可以省略上面範例的步驟，直接在型態後面加上<code>!</code>，這樣轉換完後的結果就會自動unwrapping，就不需要在每次加上!來解析，但需要注意的是如果結果還是產生了nil，那麼程式就會拋出錯誤，使用上要非常清楚程式執行的邏輯，不然應避免使用</p>
 
